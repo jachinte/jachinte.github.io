@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Person">
+<head>
+	<meta charset="utf-8">
+	<title>Miguel Jiménez - On Deployment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Miguel Jiménez">
+	<link rel="shortcut icon" href="http://localhost:8000/theme/images/favicon.png">
+
+	<!-- schema.org -->
+	<meta itemprop="name" content="Miguel Jiménez">
+	<meta itemprop="image" content="">
+	<meta itemprop="description" content="">
+
+	<!-- styles -->
+	<link rel="stylesheet" href="https://blog.migueljimenez.co/theme/fonts/opensans_light/stylesheet.css">
+	<link rel="stylesheet" href="https://blog.migueljimenez.co/theme/fonts/opensans_regular/stylesheet.css">
+	<link rel="stylesheet" href="https://blog.migueljimenez.co/theme/fonts/opensans_semibold/stylesheet.css">
+	<link rel="stylesheet" href="https://blog.migueljimenez.co/theme/fonts/foundation-icons/foundation-icons.css" />
+	<link rel="stylesheet" href="https://blog.migueljimenez.co/theme/css/app.min.css" />
+
+	<!-- feed -->
+	  <link href="https://blog.migueljimenez.co/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Miguel Jiménez ATOM Feed" />
+
+	<!-- twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="jachinte">
+	<meta name="twitter:image" content="">
+
+	<!-- twitter -->
+	<meta name="twitter:creator" content="jachinte">
+	<meta name="twitter:url" content="https://blog.migueljimenez.co/drafts/opinions-on-deployment.html">
+	<meta name="twitter:title" content="On Deployment">
+	<meta name="twitter:description" content="Angular has many lifecycle hooks, as well as a constructor. In this post, we’ll quickly cover the differences between the ngOnInit lifecycle hook which has been the source of some...">
+
+	<!-- facebook -->
+	<meta property="og:title" content="On Deployment" />
+	<meta property="og:description" content="Angular has many lifecycle hooks, as well as a constructor. In this post, we’ll quickly cover the differences between the ngOnInit lifecycle hook which has been the source of some..." />
+	<meta property="og:image" content="" />
+
+	<link rel="stylesheet" href="https://blog.migueljimenez.co/theme/css/prism.css">
+
+	<script id="dsq-count-scr" src="//jachinte.disqus.com/count.js" async></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://blog.migueljimenez.co/theme/js/readingTime.min.js"></script>
+	<!-- nomnoml diagrams -->
+	<script src="https://blog.migueljimenez.co/theme/js/dagre.min.js"></script>
+	<script src="https://blog.migueljimenez.co/theme/js/lodash.min.js"></script>
+	<script src="https://blog.migueljimenez.co/theme/js/nomnoml.js"></script>
+</head>
+<body class="pelican-victoria">
+
+	<div class="row">
+		<section id="extra" class="large-9 medium-10 small-12 small-centered columns">
+			<blockquote class="tweet" id="last-tweet">
+			</blockquote>
+		</section>
+		<section id="header" class="large-9 medium-10 small-12 small-centered columns">
+			<header>
+				<img src="https://blog.migueljimenez.co/theme/images/me-v2.jpeg" title="This is me!">
+				<nav aria-label="My profiles on the Internet">
+					<a data-profile="github" href="https://github.com/jachinte" target="_blank" title="Github">
+						<i class="fi-social-github"></i>
+					</a>
+					<a data-profile="linkedin" href="https://www.linkedin.com/in/jachinte/" target="_blank" title="LinkedIn">
+						<i class="fi-social-linkedin"></i>
+					</a>
+					<a data-profile="twitter" href="https://twitter.com/jachinte" target="_blank" title="Twitter">
+						<i class="fi-social-twitter"></i>
+					</a>
+					<a data-profile="stackoverflow" href="https://stackoverflow.com/users/738968/miguel-jim%C3%A9nez" target="_blank" title="StackOverflow">
+						<i class="fi-social-stack-overflow"></i>
+					</a>
+					<a data-profile="email" href="mailto:miguel@uvic.ca" target="_blank" title="Email">
+						<i class="fi-mail"></i>
+					</a>
+				</nav>
+				<nav aria-label="Main menu">
+					<a href="https://blog.migueljimenez.co/index.html" title="Homepage"><i class="fi-home"></i> Home</a>
+					<a href="https://blog.migueljimenez.co/archives.html" title="Archives">Archives</a>
+					<a href="https://blog.migueljimenez.co/tags.html" title="Tags">Tags</a>
+				</nav>
+			</header>
+		</section>
+	</div>
+
+	<main role="main" tabindex="0">
+		<div class="row">
+			<section class="large-9 medium-10 small-12 small-centered columns">
+	<article class="article">
+		<header>
+			<h1>
+				On Deployment
+			</h1>
+		</header>
+
+		<nav>
+			<div>
+				<a href="https://blog.migueljimenez.co/category/software-engineering.html" rel="bookmark" title="Permalink to category Software Engineering">
+					<b>Software Engineering</b>
+				</a>
+				<time datetime="2017-04-05 23:02:00-07:00">
+					April 05, 2017
+				</time>
+				<span class="eta"></span>
+				<span>
+					<i class="fi-comment"></i> <a href="https://blog.migueljimenez.co/drafts/opinions-on-deployment.html#disqus_thread"></a>
+				</span>
+			</div>
+		</nav>
+
+		<div class="content">
+			<p>Content</p>
+
+			<nav>
+					<span class="label">
+						<a href="https://blog.migueljimenez.co/tag/deployment.html">#Deployment</a>
+					</span>
+			</nav>
+		</div>
+
+		<section id="subscribe">
+			<h2>Never miss an article</h2>
+			<p>
+				I promise I won't share your email, and I won't send you spam
+			</p>
+			<form action="//pascani.us10.list-manage.com/subscribe/post?u=d56f5ff7d29628772a46a6f9b&amp;id=e0a8ff220f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<div class="row">
+					<div class="small-8 small-centered columns">
+						<div class="input-group">
+							<input type="email" name="EMAIL" id="mce-EMAIL" class="input-group-field" placeholder="Email Address" required>
+							<div class="input-group-button">
+		    				<input type="submit" class="button" value="Subscribe" id="mc-embedded-subscribe">
+		  				</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display: none"></div>
+					<div class="response" id="mce-success-response" style="display: none"></div>
+				</div>
+				<div style="position: absolute; left: -5000px;" aria-hidden="true">
+					<input type="text" name="b_d56f5ff7d29628772a46a6f9b_e0a8ff220f" tabindex="-1" value="">
+				</div>
+			</form>
+		</section>
+
+		<div class="comments">
+			<div id="disqus_thread"></div>
+			<script type="text/javascript">
+			var disqus_identifier = "drafts/opinions-on-deployment.html";
+			(function() {
+				var dsq = document.createElement('script');
+				dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = 'https://jachinte.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] ||
+				 document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+			</script>
+		</div>
+
+		<footer>
+			<a href="https://blog.migueljimenez.co/index.html" title="Go back to the homepage">Home</a>
+		</footer>
+	</article>
+
+	<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+	<script>
+		$(function(){
+			var $article = $('article');
+			$article.find('.content').readingTime({
+				readingTimeTarget: $article.find('.eta')
+			});
+		});
+		(function($) {
+			window.fnames = ['EMAIL'];
+			window.ftypes = ['email'];
+		}(jQuery));
+		var $mcj = jQuery.noConflict(true);
+	</script>
+	<script src="https://blog.migueljimenez.co/theme/js/prism.min.js"></script>
+			</section>
+			<section id="credits" class="large-9 medium-10 small-12 small-centered columns">
+				2017 &copy; Miguel Jiménez
+			</section>
+		</div>
+	</main>
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-58451947-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+	<script src="https://blog.migueljimenez.co/theme/js/twitterFetcher.min.js"></script>
+	<script>
+		var config = {
+			"customCallback": function (tweets) {
+				var tweet = tweets[0],
+						anchor = '<a class="anchor" href="' + tweet.permalinkURL + '" target="_blank" title="Link to tweet"><i class="fi-link"></i></a>',
+						div = document.getElementById('last-tweet');
+				div.innerHTML = anchor + tweet.tweet.replace(/<\/?span[^>]*>/g, "");
+				var links = div.getElementsByTagName('a');
+				for (var i = 0; i < links.length; i++) {
+					if (links[i].getAttribute('data-expanded-url') === null) {
+						continue;
+					}
+					links[i].setAttribute('href', links[i].getAttribute('data-expanded-url'));
+					links[i].setAttribute('class', '');
+				}
+			},
+			"dataOnly": true,
+			"maxTweets": 1,
+			"lang": 'en',
+			"profile": {"screenName": 'jachinte'},
+		};
+		twitterFetcher.fetch(config);
+	</script>
+
+</body>
+</html>

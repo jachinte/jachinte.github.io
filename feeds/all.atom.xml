@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Miguel Jiménez</title><link href="https://blog.migueljimenez.co/" rel="alternate"></link><link href="https://blog.migueljimenez.co/feeds/all.atom.xml" rel="self"></link><id>https://blog.migueljimenez.co/</id><updated>2017-04-30T17:20:00-07:00</updated><entry><title>Look mom, I'm blogging again</title><link href="https://blog.migueljimenez.co/posts/look-mom-im-blogging-again.html" rel="alternate"></link><published>2017-04-30T17:20:00-07:00</published><updated>2017-04-30T17:20:00-07:00</updated><author><name>Miguel Jiménez</name></author><id>tag:blog.migueljimenez.co,2017-04-30:/posts/look-mom-im-blogging-again.html</id><summary type="html">&lt;p class="first last"&gt;It's been 7 years since I wrote an article on the web. During the past
+years I've learnt many things, and it all has come to the point that
+sharing is a necessity. I'll be writing about software engineering,
+object-oriented programming, ideas, publications, and...&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;It's been 7 years since I wrote an article on the web. At that time, I was
+starting my bachelor, and managed to maintain a blog called &lt;a class="reference external" href="http://z-graphics.blogspot.com"&gt;Z-Graphics&lt;/a&gt; to help
+Blogger users enhance their sites. It was all about minor hacks and tutorials
+in Spanish. Although I must say, it wasn't just about writing and getting occasional
+anonymous comments, but the community around &lt;a class="reference external" href="http://blogsconene.blogspot.com"&gt;blogs with ñ&lt;/a&gt; (in Spanish); I met
+amazing people, and gained 37 readers, of which 3 of them were my own emails 😅.&lt;/p&gt;
+&lt;p&gt;During the past years I've learnt many things, and it all has come to the point
+that sharing is a necessity. I'll be writing about software engineering,
+object-oriented programming, research, and events.&lt;/p&gt;
+&lt;p&gt;In case you're interested, the technology behind this blog is:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://getpelican.com"&gt;Pelican&lt;/a&gt;: a static site generator&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://foundation.zurb.com"&gt;Foundation&lt;/a&gt;: a responsive front-end framework&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://prismjs.com"&gt;Prism&lt;/a&gt;: a lightweight and extensible syntax highlighter&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.npmjs.com"&gt;npm&lt;/a&gt;, &lt;a class="reference external" href="https://bower.io"&gt;bower&lt;/a&gt;, &lt;a class="reference external" href="http://gulpjs.com"&gt;gulp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="blogging"></category></entry></feed>
