@@ -52,36 +52,37 @@
 <body class="pelican-victoria">
 
 	<div class="row">
-		<section id="extra" class="large-9 medium-10 small-12 small-centered columns">
-			<blockquote class="tweet" id="last-tweet">
-			</blockquote>
+		<section id="menu" class="large-9 medium-10 small-12 small-centered columns">
+			<nav aria-label="Main menu">
+				<a href="https://migueljimenez.co/index.html" title="Homepage">Home</a>
+				<a href="https://migueljimenez.co/archives.html" title="Archives">Archives</a>
+				<a href="https://migueljimenez.co/tags.html" title="Tags">Tags</a>
+				<a href="https://migueljimenez.co/feeds/all.atom.xml" title="Never miss an article">
+					<i class="fi-rss"></i> Subscribe
+				</a>
+			</nav>
 		</section>
 		<section id="header" class="large-9 medium-10 small-12 small-centered columns">
 			<header>
-				<img src="https://migueljimenez.co/theme/images/me-v2.jpeg" title="This is me!">
+				<img src="https://migueljimenez.co/theme/images/me-190x190.jpg" title="This is me!">
+				<h1>Miguel Jiménez</h1>
+				<h3>Software Engineer & Researcher</h3>
+				<p>
+					I'm a PhD student at the University of Victoria.<br />
+					My research is on deployment technology for large-scale systems.
+				</p>
 				<nav aria-label="My profiles on the Internet">
 					<a data-profile="github" href="https://github.com/jachinte" target="_blank" title="Github">
 						<i class="fi-social-github"></i>
-					</a>
-					<a data-profile="linkedin" href="https://www.linkedin.com/in/jachinte/" target="_blank" title="LinkedIn">
-						<i class="fi-social-linkedin"></i>
+						<span>Code</span>
 					</a>
 					<a data-profile="twitter" href="https://twitter.com/jachinte" target="_blank" title="Twitter">
 						<i class="fi-social-twitter"></i>
-					</a>
-					<a data-profile="stackoverflow" href="https://stackoverflow.com/users/738968/miguel-jim%C3%A9nez" target="_blank" title="StackOverflow">
-						<i class="fi-social-stack-overflow"></i>
+						<span>Twitter</span>
 					</a>
 					<a data-profile="email" href="mailto:miguel@uvic.ca" target="_blank" title="Email">
 						<i class="fi-mail"></i>
-					</a>
-				</nav>
-				<nav aria-label="Main menu">
-					<a href="https://migueljimenez.co/index.html" title="Homepage">Home</a>
-					<a href="https://migueljimenez.co/archives.html" title="Archives">Archives</a>
-					<a href="https://migueljimenez.co/tags.html" title="Tags">Tags</a>
-					<a href="https://migueljimenez.co/feeds/all.atom.xml" title="Never miss an article">
-						<i class="fi-rss"></i> Subscribe
+						<span>Contact</span>
 					</a>
 				</nav>
 			</header>
@@ -329,31 +330,5 @@
 		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
-
-	<script src="https://migueljimenez.co/theme/js/twitterFetcher.min.js"></script>
-	<script>
-		var config = {
-			"customCallback": function (tweets) {
-				var tweet = tweets[0],
-						anchor = '<a class="anchor" href="' + tweet.permalinkURL + '" target="_blank" title="Link to tweet"><i class="fi-link"></i></a>',
-						div = document.getElementById('last-tweet');
-				div.innerHTML = anchor + tweet.tweet.replace(/<\/?span[^>]*>/g, "");
-				var links = div.getElementsByTagName('a');
-				for (var i = 0; i < links.length; i++) {
-					if (links[i].getAttribute('data-expanded-url') === null) {
-						continue;
-					}
-					links[i].setAttribute('href', links[i].getAttribute('data-expanded-url'));
-					links[i].setAttribute('class', '');
-				}
-			},
-			"dataOnly": true,
-			"maxTweets": 1,
-			"lang": 'en',
-			"profile": {"screenName": 'jachinte'},
-		};
-		twitterFetcher.fetch(config);
-	</script>
-
 </body>
 </html>

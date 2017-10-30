@@ -2,7 +2,7 @@
 <html lang="en" itemscope itemtype="http://schema.org/Person">
 <head>
 	<meta charset="utf-8">
-	<title>Miguel Jiménez - Look mom, I'm blogging again</title>
+	<title>Miguel Jiménez - Object oriented design: an experiment with changing requirements</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="Miguel Jiménez">
@@ -30,13 +30,13 @@
 
 	<!-- twitter -->
 	<meta name="twitter:creator" content="jachinte">
-	<meta name="twitter:url" content="https://migueljimenez.co/posts/look-mom-im-blogging-again.html">
-	<meta name="twitter:title" content="Look mom, I'm blogging again">
-	<meta name="twitter:description" content="It's been 7 years since I wrote an article on the web. During the past years I've learnt many things, and it all has come to the point that sharing is a necessity. I'll be writing about software engineering, object-oriented programming, and research...">
+	<meta name="twitter:url" content="https://migueljimenez.co/drafts/object-oriented-design-an-experiment-with-changing-requirements.html">
+	<meta name="twitter:title" content="Object oriented design: an experiment with changing requirements">
+	<meta name="twitter:description" content="">
 
 	<!-- facebook -->
-	<meta property="og:title" content="Look mom, I'm blogging again" />
-	<meta property="og:description" content="It's been 7 years since I wrote an article on the web. During the past years I've learnt many things, and it all has come to the point that sharing is a necessity. I'll be writing about software engineering, object-oriented programming, and research..." />
+	<meta property="og:title" content="Object oriented design: an experiment with changing requirements" />
+	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/css/prism.css">
@@ -95,49 +95,108 @@
 	<article class="article">
 		<header>
 			<h1>
-				Look mom, I'm blogging again
+				Object oriented design: an experiment with changing requirements
 			</h1>
 		</header>
 
 		<nav>
 			<div>
-				<a href="https://migueljimenez.co/category/personal.html" rel="bookmark" title="Permalink to category personal">
-					<b>personal</b>
+				<a href="https://migueljimenez.co/category/software-engineering.html" rel="bookmark" title="Permalink to category software engineering">
+					<b>software engineering</b>
 				</a>
-				<time datetime="2017-04-30 17:20:00-07:00">
-					April 30, 2017
+				<time datetime="2017-05-03 14:46:00-07:00">
+					May 03, 2017
 				</time>
 				<span class="eta"></span>
 				<span>
-					<i class="fi-comment"></i> <a href="https://migueljimenez.co/posts/look-mom-im-blogging-again.html#disqus_thread"></a>
+					<i class="fi-comment"></i> <a href="https://migueljimenez.co/drafts/object-oriented-design-an-experiment-with-changing-requirements.html#disqus_thread"></a>
 				</span>
 			</div>
 		</nav>
 
 		<div class="content">
-			<p>It's been 7 years since I wrote an article on the web. At that time, I was
-starting my bachelor, and managed to maintain <a class="reference external" href="http://z-graphics.blogspot.com">Z-Graphics</a>, a blog dedicated to help
-Blogger users enhance their sites. It was all about minor hacks and tutorials
-on web programming and design. Although I must say, it wasn't just about
-writing and getting occasional anonymous comments, but the community around it;
-<a class="reference external" href="http://blogsconene.blogspot.com">blogs with ñ</a> (blogs in Spanish) was a community of enthusiasts that shared a
-common taste for blogging. I met interesting people, and gained 37 readers, of which
-3 of them were my own emails 😅.</p>
-<p>During the past years I've learnt many things, and it all has come to the point
-that sharing is a necessity. I'll be writing about software engineering,
-object-oriented programming, and research.</p>
-<p>In case you're interested, the technology behind this blog is:</p>
+			<p>I've been reading a lot about object oriented programming lately. Every time
+I read someone else's code (and mine, of course), I can't avoid imagining a better
+way to organize it. I see static methods everywhere, getters and setters, null
+comparisons, gigantic utility classes, and whatnot. However evil are those elements
+considered, that's what I learnt during my bachelor;</p>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of contents</p>
 <ul class="simple">
-<li><a class="reference external" href="https://getpelican.com">Pelican</a>: a static site generator</li>
-<li><a class="reference external" href="http://foundation.zurb.com">Foundation</a>: a responsive front-end framework</li>
-<li><a class="reference external" href="http://prismjs.com">Prism</a>: a lightweight and extensible syntax highlighter</li>
-<li><a class="reference external" href="https://www.npmjs.com">npm</a>, <a class="reference external" href="https://bower.io">bower</a>, <a class="reference external" href="http://gulpjs.com">gulp</a>, <a class="reference external" href="http://sass-lang.com">sass</a>: tools that make development less complicated</li>
+<li><a class="reference internal" href="#further-reading-about-oop" id="id1">Further reading about OOP</a></li>
 </ul>
-<!-- This blog's template is highly inspired on `Todd Motto`_'s blog. -->
+</div>
+<!--  -->
+<blockquote class="note">
+<p><strong>User story</strong></p>
+<p>Our users are interested in improving their dietary habits. For example, some
+of them have been diagnosed with heart diseases, and they need to reduce fat and
+sugar intake, but they also need to increase sodium and something. Some market
+research we did in January tells us that third part of our user base would be
+willing to try our recipe recommendation service. What we want is to allow each
+user to set dietary goals, so that our recommendation engine takes that information
+as input, and helps users eat healthier.</p>
+<p>Your job is to design the domain objects for implementing the dietary goals. Keep
+in mind that the system should be able to know if certain goal is met or not,
+according to the current user's health indicators.</p>
+</blockquote>
+<!--  -->
+<blockquote class="note">
+<p><strong>Update 1</strong></p>
+<p>It's been three weeks since we released the beta version of our service. We've
+noticed that some of our users neither decreased nor increased some of their
+health indicators. What we want to do now is to detect when an indicator is
+maintained over time; this allows the system to take proactive action to incentivize
+the user to improve her health. This also comes in handy for setting a goal to
+maintain weight, which is something we've been hearing from our users.</p>
+<p>This shouldn't modify your design too much, right?</p>
+</blockquote>
+<!--  -->
+<blockquote class="note">
+<p><strong>Update 2</strong></p>
+<p>Carly and George [from marketing] have been working with focus groups since our
+last release. From the report they presented last week, we learnt that motivation
+plays a huge role in not only setting the dietary goals, but also following them.
+So, we decided to include the concept of policy compliance; that is, a goal is
+said to be met according to the policy compliance. So far we've thought of hard
+and soft goals, meaning that a goal is met exactly as it is expected, or that
+it is met within a given tolerance, respectively.</p>
+</blockquote>
+<!--  -->
+<blockquote class="note">
+<p><strong>Update 3</strong></p>
+<p>Some of the folks at the electronics department are already working on integrating
+some sensors, so that users can track their health indicators. So far, they've
+developed a weighing scale, and a glukometer. You're required to modify your design
+to determine whether or not a goal is met, by requesting each device a measurement
+of the corresponding indicator. We'd like to be able to add new devices as the team
+develops more sensors.</p>
+</blockquote>
+<div class="section" id="further-reading-about-oop">
+<h2><a class="toc-backref" href="#id1">Further reading about OOP</a></h2>
+<p>Did I convince you to start reading about object oriented programming? you won't
+regret it! here is a list of articles and books to start with:</p>
+<dl class="docutils">
+<dt>Object Thinking</dt>
+<dd>David West</dd>
+<dt>Elegant Objects</dt>
+<dd>Yegor Bugayenko</dd>
+<dt>OOP Alternative to Utility Classes</dt>
+<dd><a class="reference external" href="http://www.yegor256.com/2014/05/05/oop-alternative-to-utility-classes.html">http://www.yegor256.com/2014/05/05/oop-alternative-to-utility-classes.html</a></dd>
+<dt>Seven Virtues of a Good Object</dt>
+<dd><a class="reference external" href="http://www.yegor256.com/2014/11/20/seven-virtues-of-good-object.html">http://www.yegor256.com/2014/11/20/seven-virtues-of-good-object.html</a></dd>
+<dt>Getters/Setters. Evil. Period.</dt>
+<dd><a class="reference external" href="http://www.yegor256.com/2014/09/16/getters-and-setters-are-evil.html">http://www.yegor256.com/2014/09/16/getters-and-setters-are-evil.html</a></dd>
+<dt>Why extends is evil</dt>
+<dd><a class="reference external" href="http://www.javaworld.com/article/2073649/core-java/why-extends-is-evil.html">http://www.javaworld.com/article/2073649/core-java/why-extends-is-evil.html</a></dd>
+<dt>Why NULL is Bad?</dt>
+<dd><a class="reference external" href="http://www.yegor256.com/2014/05/13/why-null-is-bad.html">http://www.yegor256.com/2014/05/13/why-null-is-bad.html</a></dd>
+</dl>
+</div>
 
 			<nav>
 					<span class="label">
-						<a href="https://migueljimenez.co/tag/blogging.html">#blogging</a>
+						<a href="https://migueljimenez.co/tag/oop.html">#oop</a>
 					</span>
 			</nav>
 		</div>
@@ -172,7 +231,7 @@ object-oriented programming, and research.</p>
 		<div class="comments">
 			<div id="disqus_thread"></div>
 			<script type="text/javascript">
-			var disqus_identifier = "posts/look-mom-im-blogging-again.html";
+			var disqus_identifier = "drafts/object-oriented-design-an-experiment-with-changing-requirements.html";
 			(function() {
 				var dsq = document.createElement('script');
 				dsq.type = 'text/javascript'; dsq.async = true;
