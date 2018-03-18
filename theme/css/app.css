@@ -4658,6 +4658,9 @@ body {
   font-size: 18px;
   margin: 0 15px 0 0; }
 
+.pelican-victoria [data-profile] i {
+  font-size: 200%; }
+
 .pelican-victoria [data-profile="email"] i {
   color: #ccc; }
 
