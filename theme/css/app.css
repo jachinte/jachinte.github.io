@@ -4761,8 +4761,13 @@ body {
   .pelican-victoria .anchor:hover {
     color: #aaa; }
 
+.pelican-victoria .title {
+  font-family: 'open_sanssemibold';
+  letter-spacing: -1px;
+  text-transform: uppercase; }
+
 .pelican-victoria #header header {
-  padding: 35px 0 10px 0;
+  padding: 35px 0;
   text-align: center; }
   .pelican-victoria #header header img {
     border-radius: 50%;
@@ -4781,7 +4786,7 @@ body {
   .pelican-victoria #header header p {
     margin: 35px 0; }
   .pelican-victoria #header header nav {
-    padding: 5px 0; }
+    padding: 0; }
     .pelican-victoria #header header nav a {
       color: #4a4a4a; }
       .pelican-victoria #header header nav a:hover {
@@ -4862,6 +4867,13 @@ body {
   .pelican-victoria #page h5:first-child,
   .pelican-victoria #page h6:first-child {
     border-top: none; }
+  .pelican-victoria #page h1 {
+    font-family: 'open_sanssemibold';
+    margin: 0;
+    letter-spacing: -1px;
+    line-height: 36px;
+    padding: 0;
+    text-transform: uppercase; }
   .pelican-victoria #page .contents p {
     border-top: none; }
 

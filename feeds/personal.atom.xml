@@ -8,7 +8,7 @@ starting my bachelor, and managed to maintain &lt;a class="reference external" h
 Blogger users enhance their sites. It was all about minor hacks and tutorials
 on web programming and design. Although I must say, it wasn't just about
 writing and getting occasional anonymous comments, but the community around it;
-&lt;a class="reference external" href="http://blogsconene.blogspot.com"&gt;blogs with ñ&lt;/a&gt; (blogs in Spanish) was a community of enthusiasts that shared a
+&lt;em&gt;Blogs with ñ&lt;/em&gt; was a community of enthusiasts that shared a
 common taste for blogging. I met interesting people, and gained 37 readers, of which
 3 of them were my own emails 😅.&lt;/p&gt;
 &lt;p&gt;During the past years I've learnt many things, and it all has come to the point
@@ -21,5 +21,7 @@ object-oriented programming, and research.&lt;/p&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://prismjs.com"&gt;Prism&lt;/a&gt;: a lightweight and extensible syntax highlighter&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://www.npmjs.com"&gt;npm&lt;/a&gt;, &lt;a class="reference external" href="https://bower.io"&gt;bower&lt;/a&gt;, &lt;a class="reference external" href="http://gulpjs.com"&gt;gulp&lt;/a&gt;, &lt;a class="reference external" href="http://sass-lang.com"&gt;sass&lt;/a&gt;: tools that make development less complicated&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- This blog's template is highly inspired on `Todd Motto`_'s blog. --&gt;
+&lt;!--  --&gt;
+&lt;blockquote class="note"&gt;
+&lt;strong&gt;Note:&lt;/strong&gt; Photobucket cancelled their free 3rd party hosting plan, leaving my old blog full of unexisting pictures. I guess that's what happens with free plans in the long run.&lt;/blockquote&gt;
 </content><category term="blogging"></category></entry></feed>
