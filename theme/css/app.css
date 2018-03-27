@@ -4501,6 +4501,11 @@ a.thumbnail {
         background: #774bd2;
         color: white; }
 
+.pelican-victoria .category {
+  padding-bottom: 0 !important; }
+  .pelican-victoria .category h1 {
+    margin-bottom: 5px !important; }
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4566,8 +4571,8 @@ body {
   line-height: 24px; }
 
 .pelican-victoria hr {
-  background-image: linear-gradient(to left, #fff, #ddd, #fff);
   border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
   height: 1px;
   margin: 0; }
 
@@ -4606,6 +4611,10 @@ body {
   border-bottom: 1px solid #eee;
   color: #4a4a4a;
   padding: 0 0 60px 0; }
+
+.pelican-victoria article:not(.article) header {
+  margin-left: -70px;
+  width: calc(100% + 140px); }
 
 .pelican-victoria article nav {
   color: #8a8a8a;
@@ -4660,7 +4669,7 @@ body {
   display: inline-block;
   font-size: 18px;
   line-height: 1;
-  margin: 0 15px 0 0; }
+  margin: 0 10px 0 0; }
 
 .pelican-victoria [data-profile] i {
   font-size: 200%; }
@@ -4689,8 +4698,7 @@ body {
 .pelican-victoria pre[class*="language-"] {
   padding: 32px 64px;
   position: relative;
-  margin: 35px 0;
-  text-align: left; }
+  margin: 35px 0; }
 
 .pelican-victoria :not(pre) > code[class*="language-"],
 .pelican-victoria pre[class*="language-"] {
@@ -4738,8 +4746,9 @@ body {
     width: 32px; }
   .pelican-victoria blockquote.note {
     background: #fbfbfb;
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-left: none;
+    border-top: 1px solid #eee;
     color: #4a4a4a; }
     .pelican-victoria blockquote.note:after {
       display: none; }
@@ -4780,19 +4789,21 @@ body {
   padding: 35px 0;
   text-align: center; }
   .pelican-victoria #header header img {
-    border-radius: 50%;
     display: inline-block;
-    height: 110px;
-    margin: 0 0 20px 0;
-    width: 110px; }
+    margin: 0 0 20px 0; }
   .pelican-victoria #header header h1 {
-    font-family: 'open_sanssemibold';
+    font-family: 'open_sansregular';
     margin: 0;
     line-height: 36px;
     padding: 0; }
+    .pelican-victoria #header header h1 span {
+      font-family: 'open_sanssemibold';
+      padding-left: 3px; }
   .pelican-victoria #header header h3 {
+    font-size: 80%;
     margin: 5px 0 35px 0;
-    padding: 0; }
+    padding: 0;
+    text-transform: uppercase; }
   .pelican-victoria #header header p {
     margin: 35px 0; }
   .pelican-victoria #header header nav {
@@ -4826,6 +4837,7 @@ body {
       padding: 10px; }
 
 .pelican-victoria #credits {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
   color: #8a8a8a;
   padding: 35px 0;
   font-size: 14px;
@@ -4853,6 +4865,48 @@ body {
 
 .pelican-victoria #articles {
   padding: 35px 0 0 0; }
+
+.pelican-victoria #personas {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .pelican-victoria #personas a {
+    background: #fdfdfd;
+    border: 1px solid #f9f9f9;
+    border-radius: 5px;
+    color: #212529;
+    display: inline-block;
+    font-family: 'open_sanssemibold';
+    margin: 10px 10px 30px 10px;
+    padding: 75px 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+    width: 300px; }
+    .pelican-victoria #personas a:hover {
+      background: transparent !important;
+      border: none;
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+    .pelican-victoria #personas a:nth-child(1):hover {
+      color: #12b886; }
+    .pelican-victoria #personas a:nth-child(2):hover {
+      color: #3b5bdb; }
+    .pelican-victoria #personas a:nth-child(3):hover {
+      color: #e8590c; }
+    .pelican-victoria #personas a i {
+      display: block;
+      font-size: 350%;
+      margin: 15px; }
 
 .pelican-victoria #page {
   padding: 70px; }
