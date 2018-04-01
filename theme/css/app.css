@@ -4501,10 +4501,8 @@ a.thumbnail {
         background: #774bd2;
         color: white; }
 
-.pelican-victoria .category {
-  padding-bottom: 0 !important; }
-  .pelican-victoria .category h1 {
-    margin-bottom: 5px !important; }
+.pelican-victoria .category h1 {
+  margin-bottom: 5px !important; }
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -4718,6 +4716,9 @@ body {
 
 .pelican-victoria .no-margin-bottom {
   margin-bottom: 0 !important; }
+
+.pelican-victoria .no-border {
+  border: none !important; }
 
 .pelican-victoria pre code {
   border: none;
