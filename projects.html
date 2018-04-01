@@ -50,6 +50,7 @@
 				<a href="https://migueljimenez.co/index.html" title="Homepage">Home</a>
 						<a href="https://migueljimenez.co/about.html" title="About">About</a>
 						<a href="https://migueljimenez.co/academia.html" title="Academia">Academia</a>
+						<a href="https://migueljimenez.co/projects.html" title="Projects">Projects</a>
 				<a href="https://migueljimenez.co/archives.html" title="Archives">Archives</a>
 				<a href="https://migueljimenez.co/tags.html" title="Tags">Tags</a>
 				<a href="https://migueljimenez.co/feeds/all.atom.xml" title="Never miss an article">
@@ -68,79 +69,57 @@
 		<header>
 			<h1>Projects</h1>
 		</header>
-		<div class="section" id="pascani">
-<h2>Pascani</h2>
-<p>Github/<a class="reference external" href="https://github.com/unicesi/pascani">pascani</a></p>
-
-        <pre class="" data-line="4">
-            <code class="language-java">  package co.migueljimenez.app.monitors
-  monitor Latency {
-    val target = $domain.child("Strassen").child("matrix").service("multiplication")
-    event e raised on return of target
-
-    handler onReturn(ReturnEvent e) {
-      val tags = #{
-        "strategy" -> "strassen",
-        "host" -> "grid0",
-        "component" -> "Strassen"
-      }
-      State.latency = tag(e.value, tags)
-    }
-
-    config {
-      e.bindingUri = new URI("http://grid0:" + 3000)
-      e.subscribe(onReturn)
-    }
-  }</code>
-        </pre>
-        </div>
-<div class="section" id="amelia">
-<h2>Amelia</h2>
-<p>Github/<a class="reference external" href="https://github.com/unicesi/amelia">amelia</a></p>
-
-        <pre class="" data-line="22,25-27">
-            <code class="language-java">  package co.edu.icesi.driso.matrices
-
-  import java.util.List
-  import java.util.Map
-  import org.amelia.dsl.lib.descriptors.Host
-  import org.amelia.dsl.lib.util.Hosts
-
-  subsystem Common {
-      val String artifact = "mcm-common"
-
-      // The folder containing all of the Java projects
-      param String sources = "/tmp/matrices"
-
-      // The folder containing the compiled jar files
-      param String assets = "assets"
-
-      // Common dependencies
-      param List<String> classpath = #['<assets>/<artifact>.jar'];
-
-      // All hosts, organized by host identifier
-      param Map<String, Host> hosts = Hosts.hosts("hosts.txt").toMap[h|h.identifier]
-
-      on hosts.values {
-              init:
-                cd sources
-                compile "common/src" '<assets>/<artifact>'
-      }
-  }</code>
-        </pre>
-        </div>
-<div class="section" id="jquery-stacky">
-<h2>jQuery.Stacky</h2>
-<p>Github/<a class="reference external" href="https://github.com/jachinte/jquery.stacky">jquery.stacky</a></p>
+		<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="section" id="jquery-secretnav">
-<h2>jQuery.SecretNav</h2>
-<p>Github/<a class="reference external" href="https://github.com/jachinte/jquery.secretnav">jquery.secretnav</a></p>
+<p><strong>Panorama</strong></p>
+<ul class="simple">
+<li>Deployment specification in the context of DevOps (ongoing)</li>
+</ul>
+<p><strong>Amelia</strong></p>
+<ul class="simple">
+<li>Amelia is a compact domain-specic language tailored for specifying and executing deployment workows for distributed software systems</li>
+<li>We used Amelia's composable and extendable subsystems to specify and deploy 50+ architectural variations to improve the reference architecture of a software family and improve its performance and scalability</li>
+<li>Source code, documentation and evaluation are available online at <a class="reference external" href="https://github.com/unicesi/amelia">github.com/unicesi/amelia</a> and <a class="reference external" href="https://github.com/unicesi/amelia-evaluation">github.com/unicesi/amelia-evaluation</a></li>
+<li>Technologies: Java, Xtend, Xtext, Maven</li>
+</ul>
+<p><strong>Foodie</strong></p>
+<ul class="simple">
+<li>Foodie is a conversational kitchen assistant aiming at minimizing food wastage by optimizing the use of groceries and assist families in improving their eating habits through recipe recommendations, taking into account personal context (e.g., allergies and dietary goals) while helping reduce food waste and managing grocery budgets</li>
+<li><a class="reference external" href="https://migueljimenez.co/academia/2017/Angara-CASCON-2017.pdf">Foodie Fooderson: A Conversational Agent for the Smart Kitchen</a> was published at CASCON'2017</li>
+<li>Technologies: Java, Maven, IBM Watson Conversation &amp; Speech APIs</li>
+</ul>
+<p><strong>jQuery.Stacky</strong></p>
+<ul class="simple">
+<li>Stacky is a jQuery plugin that makes it easy to create user interfaces with panels that open horizontally. Panels can be opened, closed, expanded and collapsed. A panel can be opened in regular mode (pushed next to a panel) or in floating mode (absolute position)</li>
+<li>245+ stars and 20+ forks on Github</li>
+<li>Source code and documentation are available at <a class="reference external" href="https://github.com/jachinte/jquery.stacky">github.com/jachinte/jquery.stacky</a></li>
+<li>Technologies: JavaScript, jQuery, Sass, Grunt, Bower, npm</li>
+</ul>
+<p><strong>jQuery.SecretNav</strong></p>
+<ul class="simple">
+<li>SecretNav is a small jQuery push menu plugin that slides out an off-canvas navigation from the edge of the screen while pushing the main content away with a fancy CSS3 powered 3D perspective effect</li>
+<li>60+ stars and 10+ forks on Github</li>
+<li>Source code and documentation are available at <a class="reference external" href="https://github.com/jachinte/jquery.secretnav">github.com/jachinte/jquery.secretnav</a></li>
+<li>Technologies: JavaScript, jQuery, Sass, Grunt, Bower, npm</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="section" id="pelican-victoria">
-<h2>Pelican Victoria</h2>
-<p>Github/<a class="reference external" href="https://github.com/jachinte/pelican-victoria">pelican-victoria</a></p>
+<img alt="SaberVirtual's logo" src="/theme/images/sabervirtual.png" style="height: 50px;" />
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
+<ul class="simple">
+<li>Educative and interactive software designed for training low-income students and strengthen several skills and knowledge needed to take the state school exams SABER and ICFES</li>
+<li>I was responsible for (i) developing a Javascript parser for translating XML files to HTML code, and (ii) design/code the presentation layer using HTML and CSS, in a Java-embedded Firefox instance</li>
+</ul>
+<p><strong>PaSCAni</strong></p>
+<ul class="simple">
+<li>Pascani is a domain-specific language for specifying, compiling and deploying dynamic performance monitors to introspect (FraSCAti) SCA applications at runtime</li>
+<li>Source code and documentation are available online at <a class="reference external" href="https://github.com/unicesi/pascani">github.com/unicesi/pascani</a></li>
+<li>Technologies: Java, Xtend, Xtext, Maven, FraSCAti</li>
+</ul>
 
 	</article>
 	<script src="https://migueljimenez.co/theme/js/prism.min.js"></script>

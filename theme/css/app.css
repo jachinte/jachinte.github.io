@@ -4720,6 +4720,16 @@ body {
 .pelican-victoria .no-margin-bottom {
   margin-bottom: 0 !important; }
 
+.pelican-victoria .pull-left {
+  float: left;
+  margin: 35px;
+  margin-left: 0; }
+
+.pelican-victoria .pull-right {
+  float: right;
+  margin: 35px;
+  margin-right: 0; }
+
 .pelican-victoria pre code {
   border: none;
   padding: 0; }
