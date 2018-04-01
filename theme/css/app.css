@@ -4714,11 +4714,11 @@ body {
 .pelican-victoria .non-bullet-list ul {
   list-style-type: none; }
 
-.pelican-victoria .no-margin-bottom {
-  margin-bottom: 0 !important; }
-
 .pelican-victoria .no-border {
   border: none !important; }
+
+.pelican-victoria .no-margin-bottom {
+  margin-bottom: 0 !important; }
 
 .pelican-victoria pre code {
   border: none;
