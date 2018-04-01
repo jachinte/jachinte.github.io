@@ -4512,7 +4512,6 @@ a.thumbnail {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 body {
-  background: white;
   color: #4a4a4a;
   overflow-x: hidden; }
 
@@ -4522,7 +4521,7 @@ body {
     color: #5d2fbb; }
 
 .pelican-victoria a {
-  transition: background 0.5s ease, border 0.5s ease, color 0.5s ease; }
+  transition: background 0.2s ease, border 0.2s ease, color 0.2s ease; }
 
 .pelican-victoria b, .pelican-victoria strong {
   font-family: 'open_sanssemibold', sans-serif;
@@ -4534,6 +4533,7 @@ body {
 .pelican-victoria h4,
 .pelican-victoria h5,
 .pelican-victoria h5 {
+  color: #212529;
   font-family: 'open_sansregular';
   font-weight: normal; }
   .pelican-victoria h1 a:before,
@@ -4577,7 +4577,8 @@ body {
   margin: 0; }
 
 .pelican-victoria main {
-  outline: none; }
+  outline: none;
+  position: relative; }
   .pelican-victoria main section {
     padding: 0; }
 
@@ -4667,12 +4668,12 @@ body {
 
 .pelican-victoria [data-profile] {
   display: inline-block;
-  font-size: 18px;
+  font-size: 100%;
   line-height: 1;
-  margin: 0 10px 0 0; }
+  margin: 0 20px 0 0; }
 
 .pelican-victoria [data-profile] i {
-  font-size: 200%; }
+  font-size: 100%; }
 
 .pelican-victoria [data-profile="email"] i {
   color: #ccc; }
@@ -4690,7 +4691,6 @@ body {
   color: #FF9100; }
 
 .pelican-victoria .row > section {
-  background: white;
   position: relative; }
 
 .pelican-victoria blockquote,
@@ -4789,7 +4789,9 @@ body {
   padding: 35px 0;
   text-align: center; }
   .pelican-victoria #header header img {
-    display: inline-block;
+    border-radius: 50%;
+    display: inline;
+    height: 150px;
     margin: 0 0 20px 0; }
   .pelican-victoria #header header h1 {
     font-family: 'open_sansregular';
@@ -4805,7 +4807,8 @@ body {
     padding: 0;
     text-transform: uppercase; }
   .pelican-victoria #header header p {
-    margin: 35px 0; }
+    margin: 35px auto;
+    width: 60%; }
   .pelican-victoria #header header nav {
     padding: 0; }
     .pelican-victoria #header header nav a {
@@ -4833,8 +4836,11 @@ body {
     padding: 10px;
     text-align: center; }
     .pelican-victoria #menu nav a {
+      border-bottom: 2px solid transparent;
       font-size: 90%;
       padding: 10px; }
+      .pelican-victoria #menu nav a:hover {
+        border-bottom: 2px solid #774bd2; }
 
 .pelican-victoria #credits {
   border-top: 1px solid rgba(0, 0, 0, 0.06);
@@ -4863,50 +4869,74 @@ body {
   list-style: circle;
   padding-left: 18px; }
 
-.pelican-victoria #articles {
+.pelican-victoria.index #header {
+  margin-bottom: 70px; }
+
+.pelican-victoria.index article nav div {
+  background: #f9f9f9; }
+
+.pelican-victoria.index main {
+  background: #f9f9f9; }
+  .pelican-victoria.index main::before, .pelican-victoria.index main::after {
+    content: '';
+    left: -25%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 150%;
+    z-index: -1; }
+  .pelican-victoria.index main::before {
+    background: #eee;
+    height: 50%;
+    -ms-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    -ms-transform-origin: 3% 0;
+        transform-origin: 3% 0; }
+  .pelican-victoria.index main::after {
+    background: #f9f9f9;
+    height: 75%;
+    -ms-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    -ms-transform-origin: 0 0;
+        transform-origin: 0 0; }
+
+.pelican-victoria.index #articles {
   padding: 35px 0 0 0; }
 
-.pelican-victoria #personas {
+.pelican-victoria.index #personas {
   -ms-flex-line-pack: center;
       align-content: center;
   -ms-flex-align: stretch;
       align-items: stretch;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  font-size: 90%;
   -ms-flex-pack: center;
-      justify-content: center; }
-  .pelican-victoria #personas a {
-    background: #fdfdfd;
-    border: 1px solid #f9f9f9;
-    border-radius: 5px;
-    color: #212529;
+      justify-content: center;
+  margin: 35px auto 0 auto; }
+  .pelican-victoria.index #personas a {
+    color: #4a4a4a; }
+    .pelican-victoria.index #personas a:hover {
+      color: #774bd2; }
+  .pelican-victoria.index #personas a {
     display: inline-block;
-    font-family: 'open_sanssemibold';
-    margin: 10px 10px 30px 10px;
-    padding: 75px 0;
+    padding: 35px 0;
     text-align: center;
     text-transform: uppercase;
     transition: all 0.1s ease-in-out;
-    width: 300px; }
-    .pelican-victoria #personas a:hover {
-      background: transparent !important;
-      border: none;
-      -ms-transform: scale(1.1);
-          transform: scale(1.1); }
-    .pelican-victoria #personas a:nth-child(1):hover {
-      color: #12b886; }
-    .pelican-victoria #personas a:nth-child(2):hover {
-      color: #3b5bdb; }
-    .pelican-victoria #personas a:nth-child(3):hover {
-      color: #e8590c; }
-    .pelican-victoria #personas a i {
+    width: 20%; }
+    .pelican-victoria.index #personas a:hover {
+      -ms-transform: scale(1.08);
+          transform: scale(1.08); }
+    .pelican-victoria.index #personas a i {
       display: block;
-      font-size: 350%;
-      margin: 15px; }
+      font-size: 200%;
+      margin: 10px; }
 
 .pelican-victoria #page {
   padding: 70px; }
