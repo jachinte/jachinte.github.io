@@ -4659,6 +4659,9 @@ body {
 .pelican-victoria article p {
   margin: 24px 0; }
 
+.pelican-victoria article img {
+  border-radius: 4px; }
+
 .pelican-victoria article blockquote,
 .pelican-victoria article pre {
   margin-left: -70px !important;
@@ -4720,13 +4723,21 @@ body {
 .pelican-victoria .no-margin-bottom {
   margin-bottom: 0 !important; }
 
+.pelican-victoria .no-margin-top {
+  margin-top: 0 !important; }
+
 .pelican-victoria .pull-left {
   float: left;
   margin: 35px;
-  margin-left: 0; }
+  margin-left: -70px; }
 
 .pelican-victoria .pull-right {
   float: right;
+  margin: 35px;
+  margin-right: -70px; }
+
+.pelican-victoria .pull-center {
+  display: inline-block;
   margin: 35px;
   margin-right: 0; }
 
