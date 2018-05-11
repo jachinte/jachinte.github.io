@@ -14,24 +14,11 @@
 &lt;/div&gt;
 &lt;div class="section" id="devops-2018"&gt;
 &lt;h2&gt;DEVOPS 2018&lt;/h2&gt;
-&lt;p&gt;DEVOPS 2018 was the first international workshop on software engineering aspects of continuous practices and new models of software production and deployment. We submitted an extended abstract entitled &lt;em&gt;Round-trip Software Engineering in DevOps: Making the Infrastructure a Code Committer&lt;/em&gt;. You can look at the slides &lt;a class="reference external" href="https://migueljimenez.co/academia/2018/Jimenez-DEVOPS-Talk-2018.pdf"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;DEVOPS 2018 was the first international workshop on software engineering aspects of continuous practices and new models of software production and deployment. We submitted an extended abstract entitled &lt;em&gt;Round-trip Software Engineering in DevOps: Making the Infrastructure a Code Committer&lt;/em&gt;.&lt;/p&gt;
 &lt;img alt="Me, Bertrand Meyer wearing eighteenth-century european clothes, and Gabriel Tamura" class="pull-left no-margin-top no-margin-bottom" src="/media/blog-devops-1.jpg" style="height: 200px;" /&gt;
 &lt;p&gt;The event was held at the &lt;a class="reference external" href="https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Villebrumier"&gt;Château de Villebrumier&lt;/a&gt;. From the outset, I could already see this was no regular event; Besides providing a nice and quiet venue for discussion, the workshop organizers gave us a pleasant introduction to the historical context of the castle and the numerous art pieces therein.&lt;/p&gt;
 &lt;p&gt;The workshop started with a keynote by professor &lt;a class="reference external" href="http://dinitto.faculty.polimi.it/"&gt;Elisabetta Di Nitto&lt;/a&gt;, from Politecnico di Milano, Italy. I was very interested in Di Nitto's work, specially in &lt;a class="reference external" href="http://www.dice-h2020.eu"&gt;DICE&lt;/a&gt;, an open source framework for quality-aware DevOps, since they use the UML deployment diagram to generate TOSCA-compliant service templates and I'm working on deployment specification right now.&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Talked about research problems and contrasted my ideas with other students, professors, and people from the industry&lt;/li&gt;
-&lt;li&gt;Bertrand Meyer: Good talk&lt;/li&gt;
-&lt;li&gt;DEVOPS: good discusion, helped me shape my ideas&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;There were interesting discussions around DevOps. Since then, I have shaped and refined my original proposal. I will talk about it in this blog in the near future.&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="phdlife"></category><category term="research"></category></entry><entry><title>Look mom, I'm blogging again</title><link href="https://migueljimenez.co/posts/look-mom-im-blogging-again.html" rel="alternate"></link><published>2017-04-30T17:20:00-07:00</published><updated>2017-04-30T17:20:00-07:00</updated><author><name>Miguel Jiménez</name></author><id>tag:migueljimenez.co,2017-04-30:/posts/look-mom-im-blogging-again.html</id><summary type="html">&lt;p class="first last"&gt;It's been 7 years since I wrote an article on the web. During the past
 years I've learnt many things, and it all has come to the point that
