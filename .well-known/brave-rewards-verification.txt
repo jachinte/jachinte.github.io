@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: migueljimenez.co
+Token: 7b04837d6d04f4e23666f8a0de071b3c81be23c17eef154cd4961ec42465ac27
