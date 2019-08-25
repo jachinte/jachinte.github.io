@@ -14,9 +14,7 @@
 	<meta itemprop="description" content="">
 
 	<!-- styles -->
-	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/opensans_light/stylesheet.css">
-	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/opensans_regular/stylesheet.css">
-	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/opensans_semibold/stylesheet.css">
+	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/muli/stylesheet.css">
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/foundation-icons/foundation-icons.css" />
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/fontawesome/css/fontawesome-all.min.css" />
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/css/app.min.css" />
@@ -54,68 +52,56 @@
 
 	<div class="row">
 		<section id="menu" class="large-10 medium-10 small-12 small-centered columns">
+			<h1 class="title noicon">
+				<a href="https://migueljimenez.co/index.html" title="Homepage">Miguel Jiménez</a>
+			</h1>
 			<nav aria-label="Main menu">
-				<a href="https://migueljimenez.co/index.html" title="Homepage">Home</a>
 						<a href="https://migueljimenez.co/about.html" title="About">About</a>
 						<a href="https://migueljimenez.co/projects.html" title="Projects">Projects</a>
 				<a href="https://migueljimenez.co/archives.html" title="Archives">Archives</a>
-				<a href="https://migueljimenez.co/tags.html" title="Tags">Tags</a>
-				<a href="https://migueljimenez.co/feeds/all.atom.xml" title="Never miss an article">
-					<i class="fi-rss"></i> Subscribe
-				</a>
-				<a href="https://migueljimenez.co/cv.pdf" target="_blank" title="Curriculum Vitae">Curriculum Vitae</a>
-				<a href="https://migueljimenez.co/resume.pdf" target="_blank" title="Résumé">Résumé</a>
+				<a href="https://migueljimenez.co/resume.pdf" target="_blank" title="Resume">Resume</a>
+				<a href="https://migueljimenez.co/cv.pdf" target="_blank" title="Curriculum Vitae" class="active">Curriculum Vitae</a>
 			</nav>
 		</section>
-	<section id="header" class="large-10 medium-10 small-12 small-centered columns">
-		<header>
-			<h1 class="title">Miguel <span>Jiménez</span></h1>
-			<h3>Full-Stack Software Engineer & Researcher</h3>
-			<nav aria-label="My profiles on the Internet">
-				<a data-profile="github" href="https://github.com/jachinte" target="_blank" title="Github">
-					<i class="fab fa-github"></i> Code
-				</a>
-				<a data-profile="twitter" href="https://twitter.com/jachinte" target="_blank" title="Twitter">
-					<i class="fab fa-twitter"></i> Tweets
-				</a>
-				<a data-profile="email" href="mailto:miguel@uvic.ca" target="_blank" title="Email">
-					<i class="fas fa-envelope"></i> Contact
-				</a>
-			</nav>
-		</header>
+	<section class="large-10 medium-10 small-12 small-centered columns">
 	</section>
 	</div>
 
 	<main role="main" tabindex="0">
 		<div class="row">
 			<section class="large-10 medium-10 small-12 small-centered columns">
-	<hr />
 	<article class="article">
 		<header>
-			<h1>
+			<h1 class="title">
 				On Deployment
 			</h1>
 		</header>
 
 		<nav>
-			<div>
-				<a href="https://migueljimenez.co/category/software-engineering.html" rel="bookmark" title="Permalink to category Software Engineering">
-					<b>Software Engineering</b>
-				</a>
-				<time datetime="2017-04-05 23:02:00-07:00">
-					April 05, 2017
-				</time>
-				<span class="eta"></span>
-				<span>
-					<i class="fi-comment"></i> <a href="https://migueljimenez.co/drafts/opinions-on-deployment.html#disqus_thread"></a>
-				</span>
-			</div>
+			<time datetime="2017-04-05 23:02:00-07:00">
+				April 05, 2017
+			</time>
+			<span class="eta"></span>
+			<span>
+				<i class="fi-comment"></i> <a href="https://migueljimenez.co/drafts/opinions-on-deployment.html#disqus_thread"></a>
+			</span>
 		</nav>
 
 		<div class="content">
+			<picture>
+				<img
+					sizes="(max-width: 1400px) 100vw, 1400px"
+					srcset="
+					/media/_c_scale,w_200.jpg 200w,
+					/media/_c_scale,w_758.jpg 758w,
+					/media/_c_scale,w_1135.jpg 1135w,
+					/media/_c_scale,w_1400.jpg 1400w"
+					src="/media/_c_scale,w_1400.jpg"
+					class="full-width">
+			</picture>
 			<p>Content</p>
 
-			<nav>
+			<nav id="tags">
 					<span class="label">
 						<a href="https://migueljimenez.co/tag/deployment.html">#Deployment</a>
 					</span>
@@ -123,30 +109,12 @@
 		</div>
 
 		<section id="subscribe">
-			<h2>Never miss an article</h2>
-			<p>
-				I promise I won't share your email, and I won't send you spam
-			</p>
-			<form action="//pascani.us10.list-manage.com/subscribe/post?u=d56f5ff7d29628772a46a6f9b&amp;id=e0a8ff220f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<div class="row">
-					<div class="small-8 small-centered columns">
-						<div class="input-group">
-							<input type="email" name="EMAIL" id="mce-EMAIL" class="input-group-field" placeholder="Email Address" required>
-							<div class="input-group-button">
-		    				<input type="submit" class="button" value="Subscribe" id="mc-embedded-subscribe">
-		  				</div>
-						</div>
-					</div>
-				</div>
-
-				<div id="mce-responses" class="clear">
-					<div class="response" id="mce-error-response" style="display: none"></div>
-					<div class="response" id="mce-success-response" style="display: none"></div>
-				</div>
-				<div style="position: absolute; left: -5000px;" aria-hidden="true">
-					<input type="text" name="b_d56f5ff7d29628772a46a6f9b_e0a8ff220f" tabindex="-1" value="">
-				</div>
-			</form>
+			<h2 class="noicon">
+				<a href="https://migueljimenez.co/feeds/all.atom.xml" title="Subscribe using a news reader">
+					<i class="fi-rss"></i> Subscribe
+				</a>
+				and never miss an article
+			</h2>
 		</section>
 
 		<div class="comments">
@@ -185,7 +153,7 @@
 	<script src="https://migueljimenez.co/theme/js/prism.min.js"></script>
 			</section>
 			<section id="credits" class="large-10 medium-10 small-12 small-centered columns">
-				2017 &copy; Miguel Jiménez
+				2019 &copy; Miguel Jiménez
 			</section>
 		</div>
 	</main>

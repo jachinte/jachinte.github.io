@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'muli_blackregular';
+    src: url('muli-black-webfont.woff2') format('woff2'),
+         url('muli-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muli_blackitalic';
+    src: url('muli-blackitalic-webfont.woff2') format('woff2'),
+         url('muli-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mulibold';
+    src: url('muli-bold-webfont.woff2') format('woff2'),
+         url('muli-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mulibold_italic';
+    src: url('muli-bolditalic-webfont.woff2') format('woff2'),
+         url('muli-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muli_extraboldregular';
+    src: url('muli-extrabold-webfont.woff2') format('woff2'),
+         url('muli-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muli_extrabolditalic';
+    src: url('muli-extrabolditalic-webfont.woff2') format('woff2'),
+         url('muli-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muli_extralightregular';
+    src: url('muli-extralight-webfont.woff2') format('woff2'),
+         url('muli-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muli_extralightitalic';
+    src: url('muli-extralightitalic-webfont.woff2') format('woff2'),
+         url('muli-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muliitalic';
+    src: url('muli-italic-webfont.woff2') format('woff2'),
+         url('muli-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muli_lightregular';
+    src: url('muli-light-webfont.woff2') format('woff2'),
+         url('muli-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muli_lightitalic';
+    src: url('muli-lightitalic-webfont.woff2') format('woff2'),
+         url('muli-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muliregular';
+    src: url('muli-regular-webfont.woff2') format('woff2'),
+         url('muli-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muli_semiboldregular';
+    src: url('muli-semibold-webfont.woff2') format('woff2'),
+         url('muli-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muli_semibolditalic';
+    src: url('muli-semibolditalic-webfont.woff2') format('woff2'),
+         url('muli-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
