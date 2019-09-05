@@ -46,9 +46,6 @@
 
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/css/prism.css">
 
-	<script id="dsq-count-scr" src="//jachinte.disqus.com/count.js" async></script>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-	<script src="https://migueljimenez.co/theme/js/readingTime.min.js"></script>
 	<!-- nomnoml diagrams -->
 	<script src="https://migueljimenez.co/theme/js/dagre.min.js"></script>
 	<script src="https://migueljimenez.co/theme/js/lodash.min.js"></script>
@@ -68,7 +65,7 @@
 				<a href="https://migueljimenez.co/cv.pdf" target="_blank" title="Curriculum Vitae" class="active">Curriculum Vitae</a>
 			</nav>
 		</section>
-	<section class="large-10 medium-10 small-12 small-centered columns">
+	<section class="xlarge-12 large-10 medium-10 small-12 small-centered columns">
 	</section>
 	</div>
 
@@ -86,15 +83,26 @@
 			<time datetime="2018-03-18 12:34:00-07:00">
 				March 18, 2018
 			</time>
-			<span class="eta"></span>
-			<span>
-				<i class="fi-comment"></i> <a href="https://migueljimenez.co/posts/continuous-learning.html#disqus_thread"></a>
+			<span class="eta">
+				3 min to read
 			</span>
 		</nav>
 
 		<div class="content">
+			<picture>
+				<img
+					sizes="(max-width: 1400px) 100vw, 1400px"
+					srcset="
+					/media/blog-devops-castle_oxuv87_c_scale,w_200.jpg 200w,
+					/media/blog-devops-castle_oxuv87_c_scale,w_758.jpg 758w,
+					/media/blog-devops-castle_oxuv87_c_scale,w_1135.jpg 1135w,
+					/media/blog-devops-castle_oxuv87_c_scale,w_1400.jpg 1400w"
+					src="/media/blog-devops-castle_oxuv87_c_scale,w_1400.jpg"
+					class="full-width">
+			</picture>
 			<!-- :cover: blog-cra-urmd-0_mkjd10 -->
 <!-- Photo by `Toa Heftiba <https://unsplash.com/@heftiba>`__. -->
+<p>In the photo: DEVOPS 2018 participants frowning at the bright morning sun.</p>
 <p>Being a PhD student allows me to travel several times a year. Attending workshops and conferences is an enriching experience that gives me the opportunity to grow professionally and personally. Two weeks ago, I attended <a class="reference external" href="https://www.laser-foundation.org/devops/2018">DEVOPS 2018</a> in Toulouse, France, and a few days ago I attended <a class="reference external" href="https://cra.org/events/urmgradcohort">CRA URMD</a>, the CRA Grad Cohort workshop for underrepresented minorites and persons with disabilities. In this blog post I tell you about both experiences.</p>
 <div class="section" id="cra-urmd-2018">
 <h2>CRA URMD 2018</h2>
@@ -122,8 +130,6 @@
 <p>The event was held at the <a class="reference external" href="https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Villebrumier">Château de Villebrumier</a>. From the outset, I could already see this was no regular event; Besides providing a nice and quiet venue for discussion, the workshop organizers gave us a pleasant introduction to the historical context of the castle and the numerous art pieces therein.</p>
 <p>The workshop started with a keynote by professor <a class="reference external" href="http://dinitto.faculty.polimi.it/">Elisabetta Di Nitto</a>, from Politecnico di Milano, Italy. I was very interested in Di Nitto's work, specially in <a class="reference external" href="http://www.dice-h2020.eu">DICE</a>, an open source framework for quality-aware DevOps, since they use the UML deployment diagram to generate TOSCA-compliant service templates and I'm working on deployment specification right now.</p>
 <p>There were interesting discussions around DevOps. Since then, I have shaped and refined my original proposal. I will talk about it in this blog in the near future.</p>
-<p>Here is a picture of the workshop participants frowning at the bright morning sun:</p>
-<img alt="Participants of DEVOPS 2018" class="full-width" src="/media/blog-devops-castle.jpg" />
 </div>
 
 			<nav id="tags">
@@ -163,14 +169,6 @@
 			<a href="https://migueljimenez.co/index.html" title="Go back to the homepage">Home</a>
 		</footer>
 	</article>
-	<script>
-		$(function(){
-			var $article = $('article');
-			$article.find('.content').readingTime({
-				readingTimeTarget: $article.find('.eta')
-			});
-		});
-	</script>
 	<script src="https://migueljimenez.co/theme/js/prism.min.js"></script>
 			</section>
 			<section id="credits" class="xlarge-12 large-10 medium-10 small-12 small-centered columns">
