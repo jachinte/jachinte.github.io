@@ -13,10 +13,16 @@
 	<meta itemprop="image" content="">
 	<meta itemprop="description" content="">
 
+	<!-- javascript -->
+	<script src="https://migueljimenez.co/theme/js/jquery.min.js"></script>
+	<script src="https://migueljimenez.co/theme/js/jquery.ba-throttle-debounce.min.js"></script>
+	<script src="https://migueljimenez.co/theme/js/jquery.fluidbox.min.js"></script>
+	<script src="https://migueljimenez.co/theme/js/app.min.js"></script>
+
 	<!-- styles -->
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/muli/stylesheet.css">
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/foundation-icons/foundation-icons.css" />
-	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/fontawesome/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" href="https://migueljimenez.co/theme/css/fluidbox.min.css" />
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/css/app.min.css" />
 
 	<!-- feed -->
@@ -41,7 +47,7 @@
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/css/prism.css">
 
 	<script id="dsq-count-scr" src="//jachinte.disqus.com/count.js" async></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 	<script src="https://migueljimenez.co/theme/js/readingTime.min.js"></script>
 	<!-- nomnoml diagrams -->
 	<script src="https://migueljimenez.co/theme/js/dagre.min.js"></script>
@@ -51,14 +57,13 @@
 <body class="pelican-victoria article-page">
 
 	<div class="row">
-		<section id="menu" class="large-10 medium-10 small-12 small-centered columns">
+		<section id="menu" class="large-12 medium-10 small-12 small-centered columns">
 			<h1 class="title noicon">
 				<a href="https://migueljimenez.co/index.html" title="Homepage">Miguel Jiménez</a>
 			</h1>
 			<nav aria-label="Main menu">
 						<a href="https://migueljimenez.co/about.html" title="About">About</a>
 						<a href="https://migueljimenez.co/projects.html" title="Projects">Projects</a>
-				<a href="https://migueljimenez.co/archives.html" title="Archives">Archives</a>
 				<a href="https://migueljimenez.co/resume.pdf" target="_blank" title="Resume">Resume</a>
 				<a href="https://migueljimenez.co/cv.pdf" target="_blank" title="Curriculum Vitae" class="active">Curriculum Vitae</a>
 			</nav>
@@ -69,7 +74,7 @@
 
 	<main role="main" tabindex="0">
 		<div class="row">
-			<section class="large-10 medium-10 small-12 small-centered columns">
+			<section class="large-12 medium-10 small-12 small-centered columns">
 	<article class="article">
 		<header>
 			<h1 class="title">
@@ -88,37 +93,37 @@
 		</nav>
 
 		<div class="content">
-			<picture>
-				<img
-					sizes="(max-width: 1400px) 100vw, 1400px"
-					srcset="
-					/media/blog-cra-urmd-0_mkjd10_c_scale,w_200.jpg 200w,
-					/media/blog-cra-urmd-0_mkjd10_c_scale,w_758.jpg 758w,
-					/media/blog-cra-urmd-0_mkjd10_c_scale,w_1135.jpg 1135w,
-					/media/blog-cra-urmd-0_mkjd10_c_scale,w_1400.jpg 1400w"
-					src="/media/blog-cra-urmd-0_mkjd10_c_scale,w_1400.jpg"
-					class="full-width">
-			</picture>
-			<p>Photo by <a class="reference external" href="https://unsplash.com/&#64;heftiba">Toa Heftiba</a>.</p>
+			<!-- :cover: blog-cra-urmd-0_mkjd10 -->
+<!-- Photo by `Toa Heftiba <https://unsplash.com/@heftiba>`__. -->
 <p>Being a PhD student allows me to travel several times a year. Attending workshops and conferences is an enriching experience that gives me the opportunity to grow professionally and personally. Two weeks ago, I attended <a class="reference external" href="https://www.laser-foundation.org/devops/2018">DEVOPS 2018</a> in Toulouse, France, and a few days ago I attended <a class="reference external" href="https://cra.org/events/urmgradcohort">CRA URMD</a>, the CRA Grad Cohort workshop for underrepresented minorites and persons with disabilities. In this blog post I tell you about both experiences.</p>
 <div class="section" id="cra-urmd-2018">
 <h2>CRA URMD 2018</h2>
 <p>First of all, I'm grateful to the CRA URMD organizers for funding my trip to San Diego. They're doing an amazing job giving students the opportunity to be heard and to learn from others. If you consider yourself part of a minority in computer science, don't think it twice and look for ways to participate in these initiatives.</p>
 <p>During the workshop, I attended talks on writing thesis proposals, non-academic career paths for researchers, and building my professional persona. There were many mentors ready to help us succeed! I also attended discussions related to situations commonly faced by minorities. These discussions helped me learned a lot about other realities. I didn't know, for example, that deaf people don't consider themselves disabled, or that they see themselves as part of a different culture.</p>
-<img alt="James Mickens and me at CRA URMD" class="pull-left no-margin-top" src="/media/blog-cra-urmd-1.jpg" style="height: 250px;" />
+<a class="reference external image-reference" href="/media/blog-cra-urmd-1.jpg"><img alt="James Mickens and me at CRA URMD" class="pull-left no-margin-top" src="/media/blog-cra-urmd-1.jpg" style="height: 300px;" /></a>
 <p>I also got to talk about my research during coffee breaks and lunch. All attendees were there to really connect with others and discuss about their research with students, professors, and people from the industry.</p>
 <p><strong>Anecdote time</strong>: I went to grab a glass of water during the poster session; When I went back to my poster, someone was already there. Oh, cool, I thought. When I look at the guy's face, he asked me something but I immediately replied: OMG I know you from YouTube! (it was actually Vimeo). We both laughed. He was <a class="reference external" href="https://mickens.seas.harvard.edu/">James Mickens</a>. I watched some of his talks on the Internet a couple of years ago, and it was so nice to meet him there! I presented my ideas to him and we discussed about them. Before leaving, he said: interesting, you may be onto something here ✨</p>
 <p>I also met great people during the event. Among those, there were several Colombian PhD and master students. Of course we all danced 🕺.</p>
-<img alt="Colombians at CRA URMD" class="pull-center no-margin-top" src="/media/blog-cra-urmd-2.jpg" style="height: 350px;" />
-<img alt="Hispanics at CRA URMD" class="pull-center no-margin-top" src="/media/blog-cra-urmd-3.jpg" style="height: 350px;" />
+<!-- .. image:: /media/blog-cra-urmd-2.jpg -->
+<!-- :alt: Colombians at CRA URMD -->
+<!-- :class: pull-center no-margin-top -->
+<!-- :target: /media/blog-cra-urmd-2.jpg -->
+<!-- :height: 300 -->
+<!-- .. image:: /media/blog-cra-urmd-3.jpg -->
+<!-- :alt: Hispanics at CRA URMD -->
+<!-- :class: pull-center no-margin-top -->
+<!-- :target: /media/blog-cra-urmd-3.jpg -->
+<!-- :height: 300 -->
 </div>
 <div class="section" id="devops-2018">
 <h2>DEVOPS 2018</h2>
 <p>DEVOPS 2018 was the first international workshop on software engineering aspects of continuous practices and new models of software production and deployment. We submitted an extended abstract entitled <em>Round-trip Software Engineering in DevOps: Making the Infrastructure a Code Committer</em>.</p>
-<img alt="Me, Bertrand Meyer wearing eighteenth-century european clothes, and Gabriel Tamura" class="pull-left no-margin-top" src="/media/blog-devops-1.jpg" style="height: 250px;" />
+<a class="reference external image-reference" href="/media/blog-devops-1-2.jpg"><img alt="Me, Bertrand Meyer wearing eighteenth-century european clothes, and Gabriel Tamura" class="pull-right no-margin-top" src="/media/blog-devops-1.jpg" style="height: 300px;" /></a>
 <p>The event was held at the <a class="reference external" href="https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Villebrumier">Château de Villebrumier</a>. From the outset, I could already see this was no regular event; Besides providing a nice and quiet venue for discussion, the workshop organizers gave us a pleasant introduction to the historical context of the castle and the numerous art pieces therein.</p>
 <p>The workshop started with a keynote by professor <a class="reference external" href="http://dinitto.faculty.polimi.it/">Elisabetta Di Nitto</a>, from Politecnico di Milano, Italy. I was very interested in Di Nitto's work, specially in <a class="reference external" href="http://www.dice-h2020.eu">DICE</a>, an open source framework for quality-aware DevOps, since they use the UML deployment diagram to generate TOSCA-compliant service templates and I'm working on deployment specification right now.</p>
 <p>There were interesting discussions around DevOps. Since then, I have shaped and refined my original proposal. I will talk about it in this blog in the near future.</p>
+<p>Here is a picture of the workshop participants frowning at the bright morning sun:</p>
+<img alt="Participants of DEVOPS 2018" class="full-width" src="/media/blog-devops-castle.jpg" />
 </div>
 
 			<nav id="tags">
@@ -158,8 +163,6 @@
 			<a href="https://migueljimenez.co/index.html" title="Go back to the homepage">Home</a>
 		</footer>
 	</article>
-
-	<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 	<script>
 		$(function(){
 			var $article = $('article');
@@ -167,15 +170,10 @@
 				readingTimeTarget: $article.find('.eta')
 			});
 		});
-		(function($) {
-			window.fnames = ['EMAIL'];
-			window.ftypes = ['email'];
-		}(jQuery));
-		var $mcj = jQuery.noConflict(true);
 	</script>
 	<script src="https://migueljimenez.co/theme/js/prism.min.js"></script>
 			</section>
-			<section id="credits" class="large-10 medium-10 small-12 small-centered columns">
+			<section id="credits" class="large-12 medium-10 small-12 small-centered columns">
 				2019 &copy; Miguel Jiménez
 			</section>
 		</div>

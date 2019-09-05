@@ -13,10 +13,16 @@
 	<meta itemprop="image" content="">
 	<meta itemprop="description" content="">
 
+	<!-- javascript -->
+	<script src="https://migueljimenez.co/theme/js/jquery.min.js"></script>
+	<script src="https://migueljimenez.co/theme/js/jquery.ba-throttle-debounce.min.js"></script>
+	<script src="https://migueljimenez.co/theme/js/jquery.fluidbox.min.js"></script>
+	<script src="https://migueljimenez.co/theme/js/app.min.js"></script>
+
 	<!-- styles -->
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/muli/stylesheet.css">
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/foundation-icons/foundation-icons.css" />
-	<link rel="stylesheet" href="https://migueljimenez.co/theme/fonts/fontawesome/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" href="https://migueljimenez.co/theme/css/fluidbox.min.css" />
 	<link rel="stylesheet" href="https://migueljimenez.co/theme/css/app.min.css" />
 
 	<!-- feed -->
@@ -43,14 +49,13 @@
 <body class="pelican-victoria page-page">
 
 	<div class="row">
-		<section id="menu" class="large-10 medium-10 small-12 small-centered columns">
+		<section id="menu" class="large-12 medium-10 small-12 small-centered columns">
 			<h1 class="title noicon">
 				<a href="https://migueljimenez.co/index.html" title="Homepage">Miguel Jiménez</a>
 			</h1>
 			<nav aria-label="Main menu">
 						<a href="https://migueljimenez.co/about.html" title="About">About</a>
 						<a href="https://migueljimenez.co/projects.html" title="Projects">Projects</a>
-				<a href="https://migueljimenez.co/archives.html" title="Archives">Archives</a>
 				<a href="https://migueljimenez.co/resume.pdf" target="_blank" title="Resume">Resume</a>
 				<a href="https://migueljimenez.co/cv.pdf" target="_blank" title="Curriculum Vitae" class="active">Curriculum Vitae</a>
 			</nav>
@@ -60,23 +65,30 @@
 
 	<main role="main" tabindex="0">
 		<div class="row">
-			<section class="large-10 medium-10 small-12 small-centered columns">
-	<article id="page">
+			<section class="large-12 medium-10 small-12 small-centered columns">
+	<article class="article">
 		<header>
-			<h1>About</h1>
+			<h1 class="title">About</h1>
 		</header>
-		<img alt="This is me, outside the Louvre (2016)" class="pull-right" src="/media/about-me-1.jpg" />
-<p>Welcome to the website of Miguel Jiménez. I am a PhD student at the <a class="reference external" href="http://www.uvic.ca">University of Victoria</a>, located in the beautiful city of Victoria, Canada.</p>
-<!-- I am originally from Colombia, host to the `lungs of the world <https://www.colombianhighlands.com/amazonas>`__ and the `mythical land <https://en.wikipedia.org/wiki/Macondo>`__ once imagined by Nobel prize-winning author `Gabriel García Márquez <https://en.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez>`__. -->
-<img alt="This is me, next to my poster at CASCON (2017)" class="pull-left" src="/media/about-me-2.jpg" />
-<p>I received a Bachelor degree in Systems Engineering from <a class="reference external" href="http://www.icesi.edu.co">Universidad Icesi</a> in 2014, and a Master of Science degree in Informatics and Telecommunications in 2016 from the same university. <a class="reference external" href="https://migueljimenez.co/academia/2014/PDG-Jimenez-Caicedo-2014.pdf">My undergraduate thesis project</a> (in Spanish) was a domain-specific language (DSL) for specifying and executing composable and automated tests for the Service Component Architecture. For <a class="reference external" href="https://migueljimenez.co/academia/2016/master-thesis.pdf">my master thesis</a>, I developed a framework for generating and deploying dynamic performance monitors for Self-Adaptive Systems.  The framework was composed of two DSLs, <a class="reference external" href="https://github.com/unicesi/pascani">PaSCAni</a>, for dynamic monitoring, and <a class="reference external" href="https://github.com/unicesi/amelia">Amelia</a>, for application deployment.</p>
+		<br />
+		<div class="content">
+			<p>I am a software engineer doing a PhD at the University of Victoria, in the beautiful city of Victoria, Canada. I have more than 5 years of experience in cloud and full-stack web development. You can find out more about my research and industry experience in my <a class="reference external" href="https://migueljimenez.co/cv.pdf">curriculum vitae</a> and <a class="reference external" href="https://migueljimenez.co/resume.pdf">resume</a>.</p>
+<img alt="This is me, outside the Louvre (2016)" class="pull-left" src="/media/about-me-1.jpg" style="height: 340px;" />
+<p>I hold a Bachelor degree in Systems Engineering (2014) and a Master of Science degree in Informatics and Telecommunications (2016) from Universidad Icesi (Colombia). <a class="reference external" href="https://migueljimenez.co/academia/2014/PDG-Jimenez-Caicedo-2014.pdf">My undergraduate thesis project</a> (in Spanish) was a domain-specific language (DSL) for specifying and executing composable tests for the Service Component Architecture. For <a class="reference external" href="https://migueljimenez.co/academia/2016/master-thesis.pdf">my master thesis</a>, I developed a framework for generating and deploying dynamic performance monitors for Self-Adaptive Systems.  The framework was composed of two DSLs, <a class="reference external" href="https://github.com/unicesi/pascani">PaSCAni</a>, for dynamic monitoring, and <a class="reference external" href="https://github.com/unicesi/amelia">Amelia</a>, for application deployment.</p>
+<!-- .. image:: /media/about-me-2.jpg -->
+<!-- :alt: This is me, presenting at CASCON (2017) -->
+<!-- :class: pull-right -->
+<!-- :height: 400 -->
+<!-- :target: /media/about-me-2.jpg -->
+<p>I am currently working under the supervision of Drs. Hausi Müller and Gabriel Tamura. My research project focuses on automated evolution of cloud applications through quality-driven continuous experimentation. Out research is funded by NSERC and IBM.</p>
 <p>My research interests include Self-Adaptive Software Systems, Domain-Specific Languages, Software Deployment, and their practical application in software development. My professional objective is to find challenging problems, understand them and propose solutions that positively impact engineers' work.</p>
-<p>You can find more information about my interests and experiences in <a class="reference external" href="https://migueljimenez.co/cv.pdf">my curriculum vitae</a>.</p>
 
+		</div>
+		<br />
 	</article>
 	<script src="https://migueljimenez.co/theme/js/prism.min.js"></script>
 			</section>
-			<section id="credits" class="large-10 medium-10 small-12 small-centered columns">
+			<section id="credits" class="large-12 medium-10 small-12 small-centered columns">
 				2019 &copy; Miguel Jiménez
 			</section>
 		</div>

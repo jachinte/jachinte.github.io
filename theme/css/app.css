@@ -4505,7 +4505,7 @@ a.thumbnail {
 
 body {
   color: #6C7A89;
-  font-size: 1.2em;
+  font-size: 1.3em;
   overflow-x: hidden; }
 
 .pelican-victoria a {
@@ -4651,32 +4651,8 @@ body {
 
 .pelican-victoria article blockquote,
 .pelican-victoria article pre {
-  margin-left: -70px !important;
-  width: calc(100% + 140px); }
-
-.pelican-victoria [data-profile] {
-  display: inline-block;
-  font-size: 100%;
-  line-height: 1;
-  margin: 0 20px 0 0; }
-
-.pelican-victoria [data-profile] i {
-  font-size: 100%; }
-
-.pelican-victoria [data-profile="email"] i {
-  color: #ccc; }
-
-.pelican-victoria [data-profile="linkedin"] i {
-  color: #4875b4; }
-
-.pelican-victoria [data-profile="twitter"] i {
-  color: #00a0d1; }
-
-.pelican-victoria [data-profile="github"] i {
-  color: #333; }
-
-.pelican-victoria [data-profile="stackoverflow"] i {
-  color: #ff9100; }
+  margin-left: -140px !important;
+  width: calc(100% + 280px); }
 
 .pelican-victoria .row > section {
   position: relative; }
@@ -4721,12 +4697,12 @@ body {
 .pelican-victoria .pull-left {
   float: left;
   margin: 35px;
-  margin-left: -70px; }
+  margin-left: -140px; }
 
 .pelican-victoria .pull-right {
   float: right;
   margin: 35px;
-  margin-right: -70px; }
+  margin-right: -140px; }
 
 .pelican-victoria .pull-center {
   display: inline-block;
@@ -4889,13 +4865,12 @@ body {
     .pelican-victoria .cards .card .card-divider {
       background: transparent;
       color: #999;
-      font-size: 12px;
+      font-size: 0.7em;
       font-weight: 600;
       padding: 20px 0 0 0;
       text-align: center;
       text-transform: uppercase; }
     .pelican-victoria .cards .card .card-section {
-      font-size: 16px;
       padding: 35px;
       padding-top: 0;
       text-align: center; }
@@ -4942,45 +4917,6 @@ body {
       font-size: 200%;
       margin: 10px; }
 
-.pelican-victoria #page {
-  padding: 70px;
-  padding-top: 0; }
-  .pelican-victoria #page h1 a,
-  .pelican-victoria #page h2 a,
-  .pelican-victoria #page h3 a,
-  .pelican-victoria #page h4 a,
-  .pelican-victoria #page h5 a,
-  .pelican-victoria #page h6 a {
-    color: #2A2F36; }
-    .pelican-victoria #page h1 a:hover,
-    .pelican-victoria #page h2 a:hover,
-    .pelican-victoria #page h3 a:hover,
-    .pelican-victoria #page h4 a:hover,
-    .pelican-victoria #page h5 a:hover,
-    .pelican-victoria #page h6 a:hover {
-      color: #774bd2; }
-  .pelican-victoria #page h1:first-child,
-  .pelican-victoria #page h2:first-child,
-  .pelican-victoria #page h3:first-child,
-  .pelican-victoria #page h4:first-child,
-  .pelican-victoria #page h5:first-child,
-  .pelican-victoria #page h6:first-child {
-    border-top: none; }
-  .pelican-victoria #page header {
-    padding-bottom: 35px; }
-  .pelican-victoria #page h1 {
-    font-family: "muli_semiboldregular";
-    margin: 0;
-    letter-spacing: -1px;
-    line-height: 36px;
-    padding: 0; }
-    .pelican-victoria #page h1 a {
-      color: #774bd2; }
-      .pelican-victoria #page h1 a:hover {
-        color: #5d2fbb; }
-  .pelican-victoria #page .contents p {
-    border-top: none; }
-
 .pelican-victoria #pagination {
   padding: 35px 0; }
 
@@ -5011,7 +4947,26 @@ body {
     .row > section:before, .row > section:after {
       display: none; }
   *:not(#extra) > blockquote:before {
-    display: none; } }
+    display: none; }
+  #menu {
+    display: block !important;
+    padding: 35px !important; }
+    #menu .title {
+      display: block;
+      width: 100%; }
+    #menu nav {
+      display: block; }
+      #menu nav a {
+        line-height: 2em; }
+  .pull-left,
+  .pull-center,
+  .pull-right {
+    display: block;
+    float: none;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 35px 0;
+    width: 100%; } }
 
 @media screen and (max-width: 65em) {
   .cards .card {
