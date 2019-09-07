@@ -5004,4 +5004,6 @@ body {
 
 @-moz-document url-prefix() {
   mark.code-before:after {
-    height: 55% !important; } }
+    height: 55% !important; }
+  article nav span:not(.label)::before {
+    top: -0.3em !important; } }
