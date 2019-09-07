@@ -4912,40 +4912,14 @@ body {
 .pelican-victoria.index-page #header {
   margin-bottom: 70px; }
 
-.pelican-victoria.index-page #personas {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-align: stretch;
-      align-items: stretch;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  font-size: 90%;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin: 35px auto 0 auto; }
-  .pelican-victoria.index-page #personas a {
-    color: #2A2F36; }
-    .pelican-victoria.index-page #personas a:hover {
-      color: #553bc6; }
-  .pelican-victoria.index-page #personas a {
-    display: inline-block;
-    padding: 35px 0;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all 0.1s ease-in-out;
-    width: 20%; }
-    .pelican-victoria.index-page #personas a:hover {
-      -ms-transform: scale(1.08);
-          transform: scale(1.08); }
-    .pelican-victoria.index-page #personas a i {
-      display: block;
-      font-size: 200%;
-      margin: 10px; }
+.pelican-victoria.index-page mark.code-before {
+  background: #fdb8c0; }
+
+.pelican-victoria.index-page mark.code-before-after {
+  background: #ffeef0; }
+
+.pelican-victoria.index-page mark.code-after {
+  background: #e6ffed; }
 
 .pelican-victoria #pagination {
   padding: 35px 0; }
