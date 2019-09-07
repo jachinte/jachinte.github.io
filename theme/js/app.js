@@ -7,8 +7,10 @@ $(function(){
 	if (!mobile()) {
 		$(".image-reference").fluidbox();
 	}
-	$(".gallery").masonry({
-  	itemSelector: ".item",
-  	columnWidth: ".item"
+	$(window).load(function(){
+		$(".gallery").masonry({
+	  	itemSelector: ".item",
+	  	columnWidth: ".item"
+		});
 	});
 });

@@ -4476,9 +4476,7 @@ a.thumbnail {
   .pelican-victoria .article #subscribe {
     border-top: 2px solid rgba(0, 0, 0, 0.06);
     border-width: 1px;
-    margin-left: -70px;
-    padding: 35px;
-    width: calc(100% + 140px); }
+    padding: 35px; }
     .pelican-victoria .article #subscribe h2 {
       border: none;
       margin: 35px 0;
@@ -4673,11 +4671,6 @@ body {
 
 .pelican-victoria article p {
   margin: 24px 0; }
-
-.pelican-victoria article blockquote,
-.pelican-victoria article pre {
-  margin-left: -140px !important;
-  width: calc(100% + 280px); }
 
 .pelican-victoria .row > section {
   position: relative; }
@@ -4912,8 +4905,23 @@ body {
 .pelican-victoria.index-page #header {
   margin-bottom: 70px; }
 
+.pelican-victoria.index-page mark {
+  display: inline-block;
+  line-height: 1em;
+  padding: 0 0.015em; }
+
 .pelican-victoria.index-page mark.code-before {
-  background: #fdb8c0; }
+  background: #ffd7dc;
+  position: relative; }
+  .pelican-victoria.index-page mark.code-before:after {
+    border-bottom: 2px solid black;
+    content: '';
+    display: block;
+    height: 65%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
 
 .pelican-victoria.index-page mark.code-before-after {
   background: #ffeef0; }
@@ -4944,7 +4952,11 @@ body {
   #personas a {
     width: 30% !important; }
   .article {
-    padding: 35px !important; }
+    padding: 1em 1em 0 1em !important; }
+    .article header h2 {
+      padding-top: 0; }
+    .article header nav {
+      padding-bottom: 1em; }
   .row > section {
     border-left: none !important;
     border-right: none !important; }
@@ -4976,4 +4988,20 @@ body {
   .cards .card {
     margin-left: 0 !important;
     margin-right: 0 !important;
-    width: 100% !important; } }
+    width: 100% !important; }
+  .gallery {
+    margin: 35px 0 !important; }
+    .gallery .item {
+      width: 33% !important; }
+      .gallery .item.item--width-2 {
+        width: 33%  !important; }
+  .article .title {
+    font-size: 1.6em !important; }
+  .full-width {
+    margin-left: -35px !important;
+    width: calc(100% + 70px) !important;
+    min-width: calc(100% + 70px) !important; } }
+
+@-moz-document url-prefix() {
+  mark.code-before:after {
+    height: 55% !important; } }

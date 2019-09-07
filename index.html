@@ -47,6 +47,10 @@
 </head>
 <body class="pelican-victoria index-page">
 
+	<p>
+		<a class="show-on-focus" href="#main">Skip to content</a>
+	</p>
+
 	<div class="row">
 		<section id="menu" class="xlarge-12 large-10 medium-10 small-12 small-centered columns">
 			<h1 class="noicon">
@@ -56,6 +60,7 @@
 						<a href="https://migueljimenez.co/about.html" title="About">About</a>
 						<a href="https://migueljimenez.co/projects.html" title="Projects">Projects</a>
 				<a href="https://migueljimenez.co/resume.pdf" target="_blank" title="Resume">Resume</a>
+				<br class="hide-for-medium" />
 				<a href="https://migueljimenez.co/cv.pdf" target="_blank" title="Curriculum Vitae" class="active">Curriculum Vitae</a>
 			</nav>
 		</section>
@@ -63,15 +68,13 @@
 		<article class="article">
 			<header>
 				<h1 class="title">
-					The line that's drawn between<br />
-					<mark class="code-before">
-						<mark class="code-before-after">&nbsp;</mark><s>good</s>
-						<mark class="code-before-after">&nbsp;</mark></mark><mark class="code-after">development-
-					</mark> and
-					<mark class="code-before">
-						<mark class="code-before-after">&nbsp;</mark><s>bad</s>
-						<mark class="code-before-after">&nbsp;</mark></mark><mark class="code-after">run-time.
-					</mark>
+					The line that's drawn between <br class="show-for-large-only" />
+					<div class="show-for-large">
+						<mark class="code-before">good</mark><mark class="code-after">development-</mark> and <mark class="code-before">bad</mark><mark class="code-after">run-time.</mark>
+					</div>
+					<div class="hide-for-large">
+						development- and run-time.
+					</div>
 				</h1>
 			</header>
 		</article>
@@ -87,13 +90,13 @@
 			<div class="item">
 				<img src="https://migueljimenez.co/media/index/CASCON2017P.jpg">
 			</div>
-			<div class="item">
+			<div class="item show-for-medium">
 				<img src="https://migueljimenez.co/media/index/DEFENSE2018.jpeg">
 			</div>
 			<div class="item item--width-2">
 				<img src="https://migueljimenez.co/media/index/CASCO2018.jpg">
 			</div>
-			<div class="item">
+			<div class="item show-for-medium">
 				<img src="https://migueljimenez.co/media/index/SEMLA2018.jpg">
 			</div>
 			<div class="item">
@@ -103,7 +106,7 @@
 	</section>
 	</div>
 
-	<main role="main" tabindex="0">
+	<main id="main" role="main" tabindex="0">
 		<div class="row">
 			<section class="xlarge-12 large-10 medium-10 small-12 small-centered columns">
 	<!-- articles -->
