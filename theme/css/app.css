@@ -5022,7 +5022,7 @@ body {
   .pelican-victoria .gallery img {
     border-radius: 0;
     max-height: 280px;
-    padding: 0 5px; }
+    padding: 0 2px; }
 
 .pelican-victoria .gallery img:first-child {
   border-radius: 4px 0 0 4px; }
